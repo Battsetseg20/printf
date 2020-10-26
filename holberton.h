@@ -11,7 +11,7 @@
 /**
  * struct func_type - type structure
  * @t: pointer to the argument
- * @func: pointer-function associated with the argument
+ * @f: pointer-function associated with the argument
  */
 typedef struct func_type
 {
@@ -24,6 +24,6 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int print_str(va_list args);
 int print_char(va_list args);
-int print_pct();
+int print_pct(void);
 
 #endif

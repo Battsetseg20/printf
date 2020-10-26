@@ -42,8 +42,8 @@ int print_str(va_list args)
  *
  *Return: character "%"
  */
-int print_pct()
+int print_pct(void)
 {
-	return (write (1, "%", 1));
+	return (write(1, "%", 1));
 }
 
