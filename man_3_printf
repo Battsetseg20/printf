@@ -1,0 +1,33 @@
+.TH man_3_printf "October  26, 2020" "version 0.01" 
+
+.SH NAME
+.B _printf
+- a particular implementation of printf function.
+
+.SH SYNOPSIS
+_printf(const char *format, ...)
+
+.SH DESCRIPTION
+Function produces output according to a format.
+
+.SH OPTIONS
+.B %c
+- Prints a character
+.br
+.B %s
+- Prints a string
+.br
+.B %d
+- Prints a number in decimal
+.br
+.B %i
+- Prints a number as integer
+
+.SH RETURN VALUES
+The number of characters printed (excluding tha null byte used to end output to strings). Write output to stdout, the standart output stream.
+
+.SH SEE ALSO
+printf(3)
+
+.SH AUTHOR
+Natalia Ponsard / Tsetseg Yondongombo
