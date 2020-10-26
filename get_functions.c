@@ -8,9 +8,10 @@
 int (*get_func(const char *format))(va_list)
 {
 	int i;
-	print_t p[] = {
+	func_t p[] = {
 		{"c", print_char},
 		{"s", print_str},
+		{"%", print_pct},
 		{NULL, NULL}
 	};
 
