@@ -50,7 +50,7 @@ All function prototypes used to compile _printf() are included in the header fil
 
 ## Function description
 
-**int _printf(const char *format, ...)**
+**int _printf(const char \*format, ...)**
 This function produces output under the control of a *format string* that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg(3)) are converted for output.
 
 The **format string** is composed of zero or more directives:
@@ -63,15 +63,15 @@ The **conversion specifier:**
 
 The conversion specifier is a letter that specifies the type of conversion to be applied. Our program includes the following conversion   specifiers:
 
-**d:**	   decimal number to be provided for printing.
-
-**i:**	   integer to be provided for printing
-
-**c:**	   character to be provided for printing
-
-**s:**	...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
-
-**%:**	    A per cent sign '%' is written. No argument is converted.
+|**d:**	|   decimal number to be provided for printing.|
+| ______________|______________________________________________|
+|**i:**	|   integer to be provided for printing|
+| _____________ |______________________________________________|
+|**c:**	|   character to be provided for printing|
+|_______________|______________________________________________|
+|**s:**	|...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).|
+|_______________|______________________________________________|
+|**%:**	|    A per cent sign '%' is written. No argument is converted.|
 
 **Return value:**
 
