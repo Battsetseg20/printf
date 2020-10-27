@@ -23,16 +23,16 @@ Don't reproduced the buffer handling of the C library printf function. Don't han
 We handle the conversion specifiers:
 .br
 .B %c
-- Prints a character
+- Prints a character. The int argument is converted to an unsigned char.
 .br
 .B %s
-- Prints a string
+- Prints a string. The const char * argument is a pointer to an array of character type (pointer to a string).  Characters  from the  array are written up to (but not including) a terminating null byte ('\0').
 .br
 .B %d
-- Prints a number in decimal
+- Prints a number in decimal. The  int  argument is converted to signed decimal notation.
 .br
 .B %i
-- Prints a number as integer
+- Prints a number as integer.
 
 .SH RETURN VALUES
 The number of characters printed (excluding tha null byte used to end output to strings). Write output to stdout, the standart output stream.
