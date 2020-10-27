@@ -51,11 +51,12 @@ All function prototypes used to compile _printf() are included in the header fil
 ## Function description
 
 **int _printf(const char \*format, ...)**
+
 This function produces output under the control of a *format string* that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg(3)) are converted for output.
 
 The **format string** is composed of zero or more directives:
-Ordinary characters that are copied unchanged to the output stream. (except %)
-Conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification starts with the character %, ends with a conversion specifier ( which is a letter).
+1. Ordinary characters that are copied unchanged to the output stream. (except %)
+2. Conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification starts with the character %, ends with a conversion specifier ( which is a letter).
 
 
 The **conversion specifier:**
@@ -77,6 +78,7 @@ The conversion specifier is a letter that specifies the type of conversion to be
 
 Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings)
 A negative 1 is returned if an output error is encountered.
+___
 
 **int (\*get_func(const char \*format))(va_list)**
 
@@ -98,16 +100,16 @@ writes the character c to standard output
 
 ## Examples
 ```c
-##### _printf("Negative:[%d]\n", -762534);
-Negative:[-762534]
+ _printf("Negative:[%d]\n", -762534);
+Output:   Negative:[-762534]
 ```
-````c
-##### _printf("Character:[%c]\n", 'H');
-Character:[H]
+```c
+_printf("Character:[%c]\n", 'H');
+Output:   Character:[H]
 ```
-````c
-##### _printf("Actual     : %s\n", "holberton");
-Actual     : holberton
+```c
+_printf("Actual     : %s\n", "holberton");
+Output:    Actual     : holberton
 ```
 
 ## Author
