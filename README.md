@@ -1,4 +1,4 @@
-![Holberton logo](https://www.holbertonschool.com/holberton-logo.png)
+![Holberton logo](https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png)
 
 # Who knew  printf() could be implemented ?
 
