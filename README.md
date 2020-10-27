@@ -46,6 +46,7 @@ All function prototypes used to compile _printf() are included in the header fil
 * **get_functions.c** - contains the function get_func()
 * **file_functions.c** - contains the functions print_char, print_str and print_pct for the case of printing character, string and '%'
 * **file_func_dec_int.c** - contains the function print_dec for the case of printing decimal and integer
+* **holberton.h** - contains all headers, prototypes and structure declaration
 
 ## Function description
 
@@ -58,11 +59,11 @@ Conversion specifications, each of which results in fetching zero or more subseq
 
 The **conversion specifier:**
 The conversion specifier is a letter that specifies the type of conversion to be applied. Our program includes the following conversion   specifiers:
-**d:**	   decimal number to be provided for printing.
-**i:**	   integer to be provided for printing
-**c:**	   character to be provided for printing
-**s:**	...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
-**%:**	    A per cent sign '%' is written. No argument is converted.
+   **d:**	   decimal number to be provided for printing.
+   **i:**	   integer to be provided for printing
+   **c:**	   character to be provided for printing
+   **s:**	...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+   **%:**	    A per cent sign '%' is written. No argument is converted.
 
 **Return value:** Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings)
 A negative 1 is returned if an output error is encountered.
