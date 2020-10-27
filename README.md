@@ -14,7 +14,8 @@ All files will be compiled with gcc 4.8.4 using the flags:  -Wall -Werror -Wextr
 ### Betty coding style:
 
 All files are written in C and follows the Betty coding style for Holberton School. For more detail, check this page:
-Betty wiki
+
+[Betty style documentation](https://github.com/holbertonschool/Betty/wiki)
 
 ### Authorized functions and macros
 
@@ -83,20 +84,27 @@ ___
 **int (\*get_func(const char \*format))(va_list)**
 
 This function called by *_printf()* and checks for valid conversion specifier when it finds a '%' character. The *get_func function will check for the right conversion specifier. Upon valid specifier, it returns the corresponding function.
+___
 
 **int print_char(va_list args)**
 
 This function gets a variadic argument and prints each character of char type.
+___
 
 **int print_str(va_list args)**
 
 This function gets a variadic argument, traverse the string, and prints a character at a time. 
+___
 
 **int print_pct(va_list args)**
+
 This function prints a per cent sign '%'.
+___
 
 **int _putchar(char c)**
+
 writes the character c to standard output
+___
 
 ## Examples
 ```c
