@@ -3,16 +3,21 @@
 This repository contains C program for _printf() function written as part of the Low-level programming and Algorithm project at Holberton School. The program is the implementation of C language function printf() which prints the formatted output.
 
 
-Project overview
-Compilation:
+## Project overview
+
+###Compilation:
+
 All files will be compiled with gcc 4.8.4 using the flags:  -Wall -Werror -Wextra -pedantic
 
-$ gcc -Wall -Werror -Wextra -pedantic *.c
-Betty coding style:
+    gcc -Wall -Werror -Wextra -pedantic *.c
+
+###Betty coding style:
+
 All files are written in C and follows the Betty coding style for Holberton School. For more detail, check this page:
 Betty wiki
 
-Authorized functions and macros
+###Authorized functions and macros
+
 * write (man 2 write)
 * malloc (man 3 malloc)
 * free (man 3 free)
@@ -22,7 +27,8 @@ Authorized functions and macros
 * va_arg (man 3 va_arg)
 * _putchar(char c)
 
-Function prototypes
+##Function prototypes
+
 All function prototypes used to compile _printf() are included in the header file holberton.h:
 *    int (*get_func(const char *format))(va_list);
 *    int _putchar(char c);
@@ -31,7 +37,8 @@ All function prototypes used to compile _printf() are included in the header fil
 *    int print_char(va_list args);
 *    int print_pct(va_list args);
 *    int print_dec(va_list args);
-File description
+
+##File description
 
 * _printf.c: - contains the function _printf()
 * _putchar.c: - contains the function _putchar()
@@ -40,9 +47,9 @@ File description
 * file_functions.c - contains the functions print_char, print_str and print_pct for the case of printing character, string and '%'
 * file_func_dec_int.c - contains the function print_dec for the case of printing decimal and integer
 
-Function description
+##Function description
 
-int _printf(const char *format, ...)
+#####int _printf(const char *format, ...)
 * the function produces output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg(3)) are converted for output.
 
     The format string is composed of zero or more directives:
@@ -60,28 +67,36 @@ s	   The const char * argument is expected to be a pointer to an array of charac
 	    Return value: Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings)
 A negative 1 is returned if an output error is encountered. 
 
-int (*get_func(const char *format))(va_list)
+#####int (*get_func(const char *format))(va_list)
+
 This function called by _printf() and checks for valid conversion specifier when it finds a '%' character. The *get_func function will check for the right conversion specifier. Upon valid specifier, it returns the corresponding function.
-int print_char(va_list args)
-This function gets a variadic argument and prints each character of char type. 
-int print_str(va_list args)
+
+#####int print_char(va_list args)
+
+This function gets a variadic argument and prints each character of char type.
+
+#####int print_str(va_list args)
 This function gets a variadic argument, traverse the string, and prints a character at a time. 
 
-int print_pct(va_list args)
+#####int print_pct(va_list args)
 This function prints a per cent sign '%'.
-int _putchar(char c)
+
+#####int _putchar(char c)
 writes the character c to standard output
 
-Examples
+##Examples
 
-_printf("Negative:[%d]\n", -762534);
+#####_printf("Negative:[%d]\n", -762534);
 Negative:[-762534]
 
-_printf("Character:[%c]\n", 'H');
+#####_printf("Character:[%c]\n", 'H');
 Character:[H]
-_printf("Actual     : %s\n", "holberton");
+
+#####_printf("Actual     : %s\n", "holberton");
 Actual     : holberton
 
-Author
-Battsetseg Yondongombo, Holberton School, Cohort 13
-Natalia Ponsard, Holberton School, Cohort 13
+##Author
+#####Battsetseg Yondongombo,
+Holberton School, Cohort 13
+#####Natalia Ponsard,
+Holberton School, Cohort 13
