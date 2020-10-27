@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="https://www.holbertonschool.com/holberton-logo-no-seahorse.png">
+  <img width="409" height="128" src="https://www.holbertonschool.com/holberton-logo.png">
 </p>
 
 # Who knew  printf() could be implemented ?
