@@ -1,4 +1,6 @@
-![Holberton logo](https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png)
+<p align="center">
+  <img width="460" height="300" src="https://www.holbertonschool.com/holberton-logo-no-seahorse.png">
+</p>
 
 # Who knew  printf() could be implemented ?
 
