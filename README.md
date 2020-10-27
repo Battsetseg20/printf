@@ -57,16 +57,25 @@ The **format string** is composed of zero or more directives:
 Ordinary characters that are copied unchanged to the output stream. (except %)
 Conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification starts with the character %, ends with a conversion specifier ( which is a letter).
 
-<d1>
-<dt>The **conversion specifier:**<\dt>
-<dd>The conversion specifier is a letter that specifies the type of conversion to be applied. Our program includes the following conversion   specifiers:<\dd>
-<dd>**d:**	   decimal number to be provided for printing.<\dd>
-<dd>**i:**	   integer to be provided for printing<\dd>
-<dd>**c:**	   character to be provided for printing<\dd>
-<dd>**s:**	...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).<\dd>
-<dd>**%:**	    A per cent sign '%' is written. No argument is converted.<\dd>
 
-**Return value:** Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings)
+The **conversion specifier:**
+
+
+The conversion specifier is a letter that specifies the type of conversion to be applied. Our program includes the following conversion   specifiers:
+
+**d:**	   decimal number to be provided for printing.
+
+**i:**	   integer to be provided for printing
+
+**c:**	   character to be provided for printing
+
+**s:**	...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+
+**%:**	    A per cent sign '%' is written. No argument is converted.
+
+**Return value:**
+
+Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings)
 A negative 1 is returned if an output error is encountered.
 
 **int (*get_func(const char *format))(va_list)**
