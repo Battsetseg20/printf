@@ -10,7 +10,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i, j;
+	int i = 0, j = 0;
 	int (*f)(va_list);
 	va_list args;
 
@@ -18,8 +18,6 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-	i = 0;
-	j = 0;
 	while (format[i])
 	{
 		if (format[i] == '%')
@@ -29,17 +27,14 @@ int _printf(const char *format, ...)
 				if (format[i + 1] != 'c' && format[i + 1] != 's'
 				    && format[i + 1] != '%')
 				{
-					_putchar(format[i]);
-					_putchar(format[i + 1]);
+					j += _putchar(format[i]);
+					j += _putchar(format[i + 1]);
 					i++;
-					j += 2;
 				}
-
 				else
 				{
 					f = get_func(&format[i + 1]);
-					f(args);
-					j++;
+					j += f(args);
 					i++;
 				}
 			}
